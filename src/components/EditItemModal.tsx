@@ -40,7 +40,7 @@ const EditItemModal: React.FC<EditItemModalProps> = ({
       setError("Failed to update item. Please try again.");
     }
   };
-  
+
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 backdrop-blur-md animate-fade-in">
       <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl w-96 border border-gray-200 dark:border-gray-700">
