@@ -24,16 +24,16 @@ const EditItemModal: React.FC<EditItemModalProps> = ({
 
     try {
       // Check if the item exists on the server (new items might not)
-      if (item.id < 10000) {
-        const updatedItem = await updateItem(item.id, {
-          title,
-          body: description,
-        });
-        onUpdate(updatedItem);
-      } else {
-        // Directly update state for new items
-        onUpdate({ ...item, title, body: description });
-      }
+       if (item.id && item.id <= 100) {
+         const updatedItem = await updateItem(item.id, {
+           title,
+           body: description,
+         });
+         onUpdate(updatedItem);
+       } else {
+         // Directly update state for new items
+         onUpdate({ ...item, title, body: description });
+       }
 
       onClose();
     } catch (error) {

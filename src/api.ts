@@ -23,15 +23,26 @@ export const addItem = async (newItem: { title: string; body: string }) => {
   }
 };
 
-
 export const updateItem = async (
   id: number,
-  updatedItem: { title: string; body: string },
+  updatedData: { title: string; body: string }
 ) => {
-  const response = await axios.put(`${API_URL}/${id}`, updatedItem, {
-    headers: { "Content-Type": "application/json" },
-  });
-  return response.data;
+  const response = await fetch(
+    `https://jsonplaceholder.typicode.com/posts/${id}`,
+    {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(updatedData),
+    }
+  );
+
+  if (!response.ok) {
+    throw new Error("Failed to update item.");
+  }
+
+  return response.json();
 };
 
 export const deleteItem = async (id: number) => {

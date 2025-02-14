@@ -34,8 +34,8 @@ const ItemList: React.FC<{
   };
 
   const handleUpdate = (updatedItem: Item) => {
-    setItems(
-      items.map((item) => (item.id === updatedItem.id ? updatedItem : item))
+    setItems((prevItems) =>
+      prevItems.map((item) => (item.id === updatedItem.id ? updatedItem : item))
     );
   };
 
