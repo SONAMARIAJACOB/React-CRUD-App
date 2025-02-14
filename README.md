@@ -1,46 +1,66 @@
-# Getting Started with Create React App
+# ReactJS Application with Mock API  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview  
+This project is a ReactJS application built with TypeScript and Tailwind CSS, utilizing a mock API service (JSONPlaceholder) to perform CRUD operations.  
 
-## Available Scripts
+## 🚀 Live Demo  
+🔗 [Deployed Application](https://frontend-dev-mockapi.vercel.app/)  
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📌 Features  
+✔️ Fetch and display a list of items from the mock API  
+✔️ Add a new item to the list  
+✔️ Update an existing item  
+✔️ Delete an item from the list  
+✔️ Basic error handling for API calls  
+✔️ Responsive design using Tailwind CSS  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🛠 Tech Stack  
+- **ReactJS (TypeScript)**
+- **Tailwind CSS**
+- **JSONPlaceholder Mock API**
+- **Vercel Deployment**  
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🏗 Project Setup  
 
-### `npm run build`
+### Prerequisites  
+Before running the project, ensure you have the following installed:  
+- **Node.js** (LTS recommended) 
+- **npm**  
+- **Git**  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1️⃣ **Clone the repository**  
+```sh
+git clone https://github.com/SONAMARIAJACOB/React-CRUD-App.git
+```
+```sh
+cd my-app
+```
+2️⃣ Install dependencies
+```sh
+npm install  
+```
+3️⃣ Start the development server
+```sh
+npm start
+```
+4️⃣ Open in Browser
+- Visit http://localhost:3000/ to view the application.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  ### Mock API Endpoints 
+This project uses JSONPlaceholder for data simulation. 
+- **Get all items: GET /posts**  
+- **Create an item: POST /posts**  
+- **Update an item: PUT /posts/:id**
+- **Delete an item: DELETE /posts/:id**
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 📖 Extra Features (Optional Enhancements)
+- ✅ Edit item title/description
+- ✅ Sort and filter list items
